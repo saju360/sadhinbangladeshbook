@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".first_ordhay">
+
+    <!-- LottieAnimationView for loading animation -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loading_book_animation" />
+
+    <RelativeLayout
+        android:id="@+id/pdfViewLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/adsLayout"
+        android:layout_below="@id/animationView">
+
+        <com.github.barteksc.pdfviewer.PDFView
+            android:id="@+id/pdfView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/seracviewLayout" />
+
+        <Button
+            android:id="@+id/previousButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="#009688"
+            android:text="Previous"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="#FF9800"
+            android:text="Next"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/seracviewLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <SearchView
+                android:id="@+id/searchView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:queryHint="Search by page number" />
+
+            <TextView
+                android:id="@+id/totalPageNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/searchView"
+                android:layout_alignParentLeft="true"
+                android:text="Page Number: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/currentPageNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/totalPageNumber"
+                android:layout_toRightOf="@id/searchView"
+                android:text="Current Page Number: "
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/adsLayout"
+        android:padding="5dp"
+        android:background="#FF9800"
+        android:orientation="horizontal">
+
+        <com.applovin.mediation.ads.MaxAdView xmlns:maxads="http://schemas.applovin.com/android/1.0"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/black"
+            maxads:adUnitId="29079e03ceb3a82a" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">স্বাধীন বাংলাদেশের অভ্যুদয়ের ইতিহাস বই</string>
+
+    <string name="Drawer_Open">Open Drawer</string>
+    <string name="Drawer_Close">Close Drawer</string>
+
+
+    <string name="suchipotro">সূচিপত্র</string>
+
+    <string name="lorem_dummy_text"></string>
+
+</resources>

@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".DashBoard">
+
+
+    <ListView
+        android:id="@+id/listviewId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#EAE4E4"
+        android:dividerHeight="4dp" />
+
+
+
+
+
+
+
+
+</RelativeLayout>

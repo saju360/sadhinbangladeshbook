@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/group1">
+
+        <item
+            android:id="@+id/homeId"
+            android:checkable="true"
+            android:icon="@drawable/baseline_home"
+            android:title="হোম" />
+
+        <item
+            android:id="@+id/suchipotro"
+            android:checkable="true"
+            android:icon="@drawable/baseline_menu_book"
+            android:title="সূচিপত্র" />
+
+        <item
+            android:id="@+id/first_ordhay"
+            android:checkable="true"
+            android:icon="@drawable/baseline_menu_book"
+            android:title="প্রথম অধ্যায়" />
+
+        <item
+            android:id="@+id/second_ordhay"
+            android:checkable="true"
+            android:title="দ্বিতীয় অধ্যায়"
+            android:icon="@drawable/baseline_menu_book"/>
+        <item
+            android:id="@+id/third_ordhay"
+            android:checkable="true"
+            android:icon="@drawable/baseline_menu_book"
+            android:title="তৃতীয় অধ্যায়" />
+        <item
+            android:id="@+id/four_ordhay"
+            android:checkable="true"
+            android:icon="@drawable/baseline_menu_book"
+            android:title="চতুর্থ অধ্যায়" />
+        <item
+            android:id="@+id/five_ordhay"
+            android:checkable="true"
+            android:icon="@drawable/baseline_menu_book"
+            android:title="পঞ্চম অধ্যায়" />
+        <item
+            android:id="@+id/six_ordhay"
+            android:checkable="true"
+            android:icon="@drawable/baseline_menu_book"
+            android:title="ষষ্ঠ অধ্যায়" />
+        <item
+            android:id="@+id/seven_ordhay"
+            android:checkable="true"
+            android:icon="@drawable/baseline_menu_book"
+            android:title="সপ্তম অধ্যায়" />
+        <item
+            android:id="@+id/eight_ordhay"
+            android:checkable="true"
+            android:icon="@drawable/baseline_menu_book"
+            android:title="অষ্টম অধ্যায়" />
+        <item
+            android:id="@+id/nine_ordhay"
+            android:checkable="true"
+            android:icon="@drawable/baseline_menu_book"
+            android:title="নবম অধ্যায়" />
+        <item
+            android:id="@+id/ten_ordhay"
+            android:checkable="true"
+            android:icon="@drawable/baseline_menu_book"
+            android:title="দশম অধ্যায়" />
+
+    </group>
+
+
+    <group android:id="@+id/group3">
+
+        <item
+            android:id="@+id/privacypolicy"
+            android:checkable="true"
+            android:icon="@drawable/privacy_policy"
+            android:title="Privacy Policy" />
+
+        <item
+            android:id="@+id/aboutus"
+            android:checkable="true"
+            android:icon="@drawable/about_us"
+            android:title="About Us" />
+
+    </group>
+
+
+</menu>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "958518201189",
+    "project_id": "history-emergence-of-bd-book",
+    "storage_bucket": "history-emergence-of-bd-book.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:958518201189:android:ed4d33634518de66106f8c",
+        "android_client_info": {
+          "package_name": "com.saju.nusadhinbanglaovuddoyeritihasbook"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3aPV1PUQAQuL-onjaZLGOVO1c-s83LrU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
